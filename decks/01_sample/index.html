@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプルデッキ — Slide Starter</title>
+  <link rel="stylesheet" href="../../engine/slide.css">
+  <link rel="stylesheet" href="../../theme/sample.css">
+</head>
+<body>
+
+<div class="deck">
+
+  <!-- ===== 01 タイトルスライド ===== -->
+  <section class="slide slide-title">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <p class="label mono">2026.04 &nbsp;/&nbsp; あなたの名前</p>
+    <h1>ここにメインタイトルを<br>入れてください</h1>
+    <p class="sub">サブタイトル・発表の概要を1〜2行で。<br>タイトルは1行で収めるのが理想。</p>
+  </section>
+
+  <!-- ===== 02 コンテンツ（シンプル本文） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>セクションタイトル</h2>
+      <p>本文テキスト。1スライドに1メッセージ。<br>
+         余白を活かして、情報を詰め込みすぎない。</p>
+      <p>2段落目が必要な場合はこのように追加する。<br>
+         それでも本文は3〜5行以内に収めること。</p>
+    </div>
+  </section>
+
+  <!-- ===== 03 コンテンツ（section-label + 箇条書き） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <p class="section-label">Chapter 01 &nbsp;/&nbsp; 課題の整理</p>
+      <h2>3つのポイント</h2>
+      <ul class="list">
+        <li>最初のポイント。<span class="accent bold">強調したい語句</span>はこう書く。</li>
+        <li>2番目のポイント。簡潔に、1行〜2行で収める。</li>
+        <li>3番目のポイント。箇条書きは最大5項目まで。</li>
+        <li>4番目のポイント。<span class="muted">補足情報は muted クラスで薄く。</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== 04 コンテンツ（2カラム比較） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>Before / After 比較</h2>
+      <div class="cols-2">
+        <div>
+          <h3 class="muted" style="margin-bottom:.75rem;">Before</h3>
+          <ul class="list">
+            <li>課題・問題点をここに書く</li>
+            <li>従来のやり方の限界</li>
+            <li>解決されていない部分</li>
+          </ul>
+        </div>
+        <div style="border-left: var(--border); padding-left: var(--sp-lg);">
+          <h3 class="accent" style="margin-bottom:.75rem;">After</h3>
+          <ul class="list">
+            <li>改善後の状態をここに書く</li>
+            <li>新しいアプローチで得られる効果</li>
+            <li>具体的なメリット・成果</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 05 コンテンツ（heading-bar パターン） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="heading-bar">取り組みの概要：ヘッダーバーを使ったレイアウト</div>
+    <div class="body">
+      <h3 class="muted">サブセクション名</h3>
+      <p>ページ上部に濃色の全幅バーを配置するレイアウト。<br>
+         日本のビジネスプレゼンで頻出するパターン。</p>
+      <div class="cols-2">
+        <div class="highlight-box">
+          <span class="box-title">概要</span>
+          <p>ハイライトボックスは左にアクセント色のボーダーが入り、補足情報・概要・注意点などを囲むのに使う。</p>
+        </div>
+        <div class="highlight-box">
+          <span class="box-title">導入効果</span>
+          <ul class="list" style="margin-top:.25rem;">
+            <li>効果・成果の1点目</li>
+            <li>効果・成果の2点目</li>
+            <li>効果・成果の3点目</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 06 図解：フローチャート（横） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>プロセスの流れ</h2>
+      <div class="flow">
+        <div class="flow-step">
+          <h3>収集</h3>
+          <p>データを集める</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <h3>分析</h3>
+          <p>パターンを見つける</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <h3>実行</h3>
+          <p>施策に落とす</p>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <h3>検証</h3>
+          <p>効果を測定する</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 07 図解：縦ステップ ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>導入プロセス</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <div class="step-body">
+            <h3>お問い合わせ・ご相談</h3>
+            <p>現状の課題やお困りごとをヒアリング。目的と状況を確認してご案内します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <div class="step-body">
+            <h3>現状ヒアリング・課題整理</h3>
+            <p>業務の流れや運用状況を確認。優先順位を明確にして改善方向性を検討します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <div class="step-body">
+            <h3>改善プランのご提案</h3>
+            <p>具体的な内容と進行スケジュール・支援内容を共有します。</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <div class="step-body">
+            <h3>導入・支援開始</h3>
+            <p>施策を実行し、成果が出るまで継続的にフォローします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 08 図解：3カラムカード ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>3つの柱</h2>
+      <div class="cols-3">
+        <div class="card">
+          <span class="tag">01</span>
+          <h3>戦略設計</h3>
+          <p>ゴールから逆算して<br>打ち手を構造化する。</p>
+        </div>
+        <div class="card">
+          <span class="tag">02</span>
+          <h3>高速実装</h3>
+          <p>仮説を最速で形にし<br>市場からFBを得る。</p>
+        </div>
+        <div class="card">
+          <span class="tag">03</span>
+          <h3>継続改善</h3>
+          <p>データに基づいて<br>サイクルを回し続ける。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 09 図解：4カラムカード ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>4つのサポートメニュー</h2>
+      <div class="cols-4">
+        <div class="card">
+          <span class="tag">SUPPORT 01</span>
+          <h3>業務整理<br>サポート</h3>
+          <p>業務の棚卸し<br>ムダの洗い出し</p>
+        </div>
+        <div class="card">
+          <span class="tag">SUPPORT 02</span>
+          <h3>改善設計<br>サポート</h3>
+          <p>フローの再設計<br>ルール整備</p>
+        </div>
+        <div class="card">
+          <span class="tag">SUPPORT 03</span>
+          <h3>仕組み構築<br>サポート</h3>
+          <p>テンプレート作成<br>標準化支援</p>
+        </div>
+        <div class="card">
+          <span class="tag">SUPPORT 04</span>
+          <h3>定着支援<br>サポート</h3>
+          <p>運用フォロー<br>改善レビュー</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10 図解：KPI / 数字ハイライト ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>主要指標</h2>
+      <div class="cols-3" style="align-items: center;">
+        <div class="stat">
+          <span class="number">3.2x</span>
+          <span class="label">生産性向上</span>
+        </div>
+        <div class="stat">
+          <span class="number">47%</span>
+          <span class="label">コスト削減</span>
+        </div>
+        <div class="stat">
+          <span class="number">120+</span>
+          <span class="label">導入企業数</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 11 テキスト+画像（横並び） ===== -->
+  <section class="slide slide-content">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="body">
+      <h2>テキストと画像の組み合わせ</h2>
+      <div class="text-img">
+        <div class="text">
+          <p>左にテキスト、右に画像を配置するレイアウト。</p>
+          <p>プロダクトのスクリーンショットや概念図を添えるのに最適。</p>
+          <ul class="list">
+            <li>補足ポイント 1</li>
+            <li>補足ポイント 2</li>
+          </ul>
+        </div>
+        <div class="img-box">
+          <img src="assets/image-box.png" alt="サンプル画像">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12 全幅画像スライド ===== -->
+  <section class="slide slide-content" style="padding: 0;">
+    <div class="img-box" style="border-radius: 0;">
+      <img src="assets/image-box.png" alt="全幅画像">
+    </div>
+  </section>
+
+  <!-- ===== 13 セクション区切り ===== -->
+  <section class="slide slide-section">
+    <span class="section-num">Part 02</span>
+    <h2>セクション見出し</h2>
+    <p>セクションの区切りに使う。<br>章立てのあるプレゼンに最適。</p>
+  </section>
+
+  <!-- ===== 14 ランディングステートメント（左ボーダー） ===== -->
+  <section class="slide slide-landing">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <h2>ここに最も伝えたい<br>
+      <span class="accent">核心の一文</span>を置く。<br>
+      著者の確信・結論・印象的な比喩に使う。</h2>
+  </section>
+
+  <!-- ===== 15 ステートメント（中央揃え・問い・転換） ===== -->
+  <section class="slide slide-statement">
+    <h2>では、どうすれば<br>
+      <span class="accent">変えられる</span>のか？</h2>
+    <p class="muted">修辞的な問い・セクション転換・Q&amp;A に使う</p>
+  </section>
+
+  <!-- ===== 16 ステートメント（中央・宣言文） ===== -->
+  <section class="slide slide-statement">
+    <h2>「現場を知らないと、<br>使ってもらえる<br>システムは作れない」</h2>
+  </section>
+
+  <!-- ===== 17 エンディングスライド ===== -->
+  <section class="slide slide-end">
+    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
+    <div class="mark"></div>
+    <h2>ありがとうございました</h2>
+    <p class="muted">お名前 &nbsp;/&nbsp; 肩書き・所属</p>
+    <p class="muted mono" style="font-size: var(--text-sm);">email@example.com</p>
+  </section>
+
+</div><!-- /.deck -->
+
+<!-- ── ナビUI ── -->
+<div class="slide-ui">
+  <div class="slide-counter">01 / 17</div>
+  <div class="slide-nav">
+    <button id="btn-prev">← Prev</button>
+    <button id="btn-next">Next →</button>
+    <button id="btn-pdf" title="PDF書き出し">PDF</button>
+    <button id="btn-fs" title="フルスクリーン (F)">⛶</button>
+  </div>
+</div>
+
+<script src="../../engine/slide.js"></script>
+</body>
+</html>
