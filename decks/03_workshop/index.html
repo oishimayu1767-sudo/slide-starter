@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>工場データ取得と見える化（BI活用） — 高知DXコミュニティ ワークショップ企画案</title>
+  <title>BIワークショップ企画案 第1回：事例共有＆課題棚卸し編 — 高知DXコミュニティ</title>
   <link rel="stylesheet" href="../../engine/slide.css">
   <link rel="stylesheet" href="../../theme/sample.css">
   <style>
     @media print {
-      /* 印刷時にrem基準を縮小してカード2行などが収まるようにする */
       html { font-size: 12px; }
-      /* グリッド・カードの余白を圧縮 */
       .cols-2, .cols-3, .cols-4 { gap: .75rem; }
       .card { padding: .6rem .9rem; }
       .highlight-box { padding: .4rem .75rem; }
       .body { gap: 1rem; }
-      /* rgba背景を固定hexに変換（極薄のrgbaは印刷でグレーになるため） */
       .card, .highlight-box, .flow-step, .step {
         background: #f0faf8 !important;
       }
@@ -30,350 +27,178 @@
   <section class="slide slide-title">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <p class="label mono">高知DXコミュニティ &nbsp;/&nbsp; ワークショップ企画案</p>
-    <h1>工場データ取得と<br>見える化（BI活用）</h1>
-    <p class="sub">データはあるが意思決定に使えていない。<br>BI導入前の"考え方"を整える場をつくる。</p>
+    <h1>BIワークショップ<br>企画案</h1>
+    <p class="sub">第1回：事例共有＆課題棚卸し編</p>
   </section>
 
-  <!-- ===== 02 セクション区切り：企画の位置づけ ===== -->
-  <section class="slide slide-section">
-    <span class="section-num">Part 01</span>
-    <h2>企画の位置づけ（Why）</h2>
-    <p>なぜこのワークショップを実施するのか</p>
-  </section>
-
-  <!-- ===== 03 課題：現状 ===== -->
+  <!-- ===== 02 開催趣旨 ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 01 &nbsp;/&nbsp; 企画の位置づけ（Why）</p>
-      <h2>高知企業のDX、3つの現状</h2>
+      <h2>開催趣旨</h2>
       <ul class="list">
-        <li>アンケート結果<span class="accent bold">「工場稼働データの取得と見える化（BI活用）」</span>が多かった</li>
-        <li>データはあるが<span class="accent bold">意思決定に使えていない</span></li>
-        <li><span class="accent bold">目的設計が曖昧なまま</span>BI導入が進んでいる</li>
+        <li>先進企業の事例から<span class="accent bold">「BIツールで何ができるのか」「導入時にどんな壁があるのか」</span>を具体的に学びます</li>
+        <li>他社との意見交換を通じて、自社導入に向けた「最初の一歩」を明確にすることを目的とします</li>
       </ul>
     </div>
   </section>
 
-  <!-- ===== 04 ランディング：本企画の役割 ===== -->
+  <!-- ===== 03 ランディング：目的 ===== -->
   <section class="slide slide-landing">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <h2>本企画の役割は<br>
-      <span class="accent">BI導入前の"考え方"を<br>整える場</span></h2>
+    <h2>自社導入に向けた<br>
+      <span class="accent">「最初の一歩」を明確にする</span></h2>
+    <p class="muted" style="margin-top: 1.5rem; font-size: .85em;">どのデータを、何のために可視化するか</p>
   </section>
 
-  <!-- ===== 05 ターゲット定義 ===== -->
+  <!-- ===== 04 開催概要 ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 01 &nbsp;/&nbsp; 企画の位置づけ（Why）</p>
-      <h2>ターゲット定義</h2>
+      <h2>開催概要</h2>
       <div class="cols-2">
-        <div>
-          <h3 class="accent" style="margin-bottom:.75rem;">想定企業</h3>
-          <ul class="list">
-            <li>データはあるが活用できていない企業</li>
-            <li>これからDX/BIに取り組みたい企業</li>
-            <li>現場改善・原価管理に課題がある企業</li>
-          </ul>
+        <div class="card">
+          <span class="tag">ターゲット</span>
+          <h3>高知DXコミュニティ参加企業</h3>
+          <p class="muted">経営層・現場担当者</p>
         </div>
-        <div style="border-left: var(--border); padding-left: var(--sp-lg);">
-          <ul class="list">
-            <li>すでに高度なBI活用ができている企業<br><span class="muted">→ 事例発表側として参加</span></li>
-          </ul>
+        <div class="card">
+          <span class="tag">開催時間</span>
+          <h3>120分</h3>
+        </div>
+        <div class="card">
+          <span class="tag">実施形式</span>
+          <h3>対面</h3>
+          <p class="muted">会場：トミナガ会議室</p>
+        </div>
+        <div class="card">
+          <span class="tag">定員</span>
+          <h3>9名程度</h3>
+          <p class="muted">4~5名 × 2グループを想定</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== 06 参加企業の前提条件 ===== -->
+  <!-- ===== 05 プログラム構成（120分） ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 01 &nbsp;/&nbsp; 企画の位置づけ（Why）</p>
-      <h2>参加企業の前提条件</h2>
-      <ul class="list">
-        <li>困りごとを<span class="accent bold">最低1つ以上</span>持参</li>
-        <li>高知DXコミュニティメンバーが参加</li>
-        <li>一定レベルの情報共有が可能</li>
-      </ul>
+      <h2>プログラム構成（120分）</h2>
+      <div class="cols-3" style="gap: .5rem;">
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">5分</span>
+          <h3 style="font-size:.85rem;">開会挨拶</h3>
+          <p style="font-size:.75rem;" class="muted">趣旨説明、本日のゴール設定</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">15分</span>
+          <h3 style="font-size:.85rem;">事例共有①（垣内様）</h3>
+          <p style="font-size:.75rem;" class="muted">現場での活用事例（ダミーデータ）</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">10分</span>
+          <h3 style="font-size:.85rem;">質疑応答</h3>
+          <p style="font-size:.75rem;" class="muted">技術的・組織的な疑問の解消</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">15分</span>
+          <h3 style="font-size:.85rem;">事例共有②（土佐電子様）</h3>
+          <p style="font-size:.75rem;" class="muted">現場での活用事例（ダミーデータ）</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">10分</span>
+          <h3 style="font-size:.85rem;">質疑応答</h3>
+          <p style="font-size:.75rem;" class="muted">技術的・組織的な疑問の解消</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">5分</span>
+          <h3 style="font-size:.85rem;">休憩</h3>
+          <p style="font-size:.75rem;" class="muted">ネットワーキング、グループ分けの調整</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem; border-color: var(--accent);">
+          <span class="tag">35分</span>
+          <h3 style="font-size:.85rem;">【ワーク】意見交換</h3>
+          <p style="font-size:.75rem;" class="muted">各社課題を共有、グループで話し合いワークシートにまとめる</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">20分</span>
+          <h3 style="font-size:.85rem;">全体共有・フィードバック</h3>
+          <p style="font-size:.75rem;" class="muted">各グループの気づきをシェア、今後のワークショップ案を提案</p>
+        </div>
+        <div class="card" style="padding: .6rem .8rem;">
+          <span class="tag">5分</span>
+          <h3 style="font-size:.85rem;">閉会挨拶</h3>
+          <p style="font-size:.75rem;" class="muted">アンケート実施、第2回に向けたアナウンス</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ===== 07 ゴール設計 Before/After ===== -->
+  <!-- ===== 06 事前準備（アクションアイテム） ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 01 &nbsp;/&nbsp; 企画の位置づけ（Why）</p>
-      <h2>ゴール設計（Before / After）</h2>
+      <h2>事前準備（アクションアイテム）</h2>
+      <p class="muted">精度の高いワークショップにするため、参加者へ以下の事前アンケートを実施します。</p>
       <div class="cols-2">
-        <div>
-          <h3 class="muted" style="margin-bottom:.75rem;">Before</h3>
-          <ul class="list">
-            <li>何を見たいか分からない</li>
-            <li>データがバラバラ</li>
-            <li>課題が言語化できない</li>
-          </ul>
+        <div class="highlight-box">
+          <span class="box-title">データの蓄積状況</span>
+          <p>紙、Excel、クラウドシステム、基幹システム等、どの段階か？</p>
         </div>
-        <div style="border-left: var(--border); padding-left: var(--sp-lg);">
-          <h3 class="accent" style="margin-bottom:.75rem;">After</h3>
-          <ul class="list">
-            <li>自社の「困りごと」が明確</li>
-            <li>可視化したい指標（KPI）が定義できている</li>
-            <li>必要なデータ項目が整理されている</li>
-          </ul>
+        <div class="highlight-box">
+          <span class="box-title">具体的に知りたい事例</span>
+          <p>製造工程の効率化、売上予測、原価管理、在庫適正化など。</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 08 成果物（アウトプット） ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 01 &nbsp;/&nbsp; 企画の位置づけ（Why）</p>
-      <h2>成果物（アウトプット）</h2>
-      <p class="muted">参加企業が持ち帰るもの</p>
-      <div class="cols-2">
-        <div class="card"><span class="tag">01</span><h3>困りごと整理シート</h3></div>
-        <div class="card"><span class="tag">02</span><h3>可視化したいKPI一覧</h3></div>
-        <div class="card"><span class="tag">03</span><h3>必要データ一覧（取得項目）</h3></div>
-        <div class="card"><span class="tag">04</span><h3>簡易ダッシュボード案</h3></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 09 ランディング：アウトプット必須 ===== -->
-  <section class="slide slide-landing">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <h2><span class="accent">アウトプット必須</span><br>
-      やりっぱなし防止</h2>
-  </section>
-
-  <!-- ===== 10 セクション区切り：ワークショップ設計 ===== -->
-  <section class="slide slide-section">
-    <span class="section-num">Part 02</span>
-    <h2>ワークショップ設計</h2>
-    <p>時間配分・ワークシート・事前インプット</p>
-  </section>
-
-  <!-- ===== 11 時間配分（2時間） ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 02 &nbsp;/&nbsp; ワークショップ設計</p>
-      <h2>時間配分（2時間）</h2>
-      <div class="cols-4" style="gap: .6rem;">
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">① 30分</span><h3 style="font-size:.9rem;">導入</h3><p style="font-size:.78rem;">趣旨説明 / 事例紹介（垣内・土佐電子など）</p></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">② 20分</span><h3 style="font-size:.9rem;">専門家コメント</h3><p style="font-size:.78rem;">乾さん</p></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">③ 15分</span><h3 style="font-size:.9rem;">個人ワーク</h3><p style="font-size:.78rem;">困りごと整理 / チェックリスト回答</p></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag"> 5分</span><h3 style="font-size:.9rem;">休憩</h3></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">④ 25分</span><h3 style="font-size:.9rem;">グループ共有</h3><p style="font-size:.78rem;">各社課題共有</p></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">⑤ 15分</span><h3 style="font-size:.9rem;">整理ワーク</h3><p style="font-size:.78rem;">KPI／必要データ定義</p></div>
-        <div class="card" style="padding: .7rem .8rem;"><span class="tag">⑥ 10分</span><h3 style="font-size:.9rem;">まとめ</h3><p style="font-size:.78rem;">次アクション設定</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 12 ワークシート構成 ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 02 &nbsp;/&nbsp; ワークショップ設計</p>
-      <h2>ワークシート構成</h2>
-      <div class="cols-3">
-        <div class="card"><span class="tag">①</span><h3>困りごと整理</h3></div>
-        <div class="card"><span class="tag">②</span><h3>見たい指標（KPI）</h3></div>
-        <div class="card"><span class="tag">③</span><h3>必要データ</h3></div>
-        <div class="card"><span class="tag">④</span><h3>現在の取得状況</h3></div>
-        <div class="card"><span class="tag">⑤</span><h3>ギャップ（不足データ）</h3></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 13 事前インプット ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 02 &nbsp;/&nbsp; ワークショップ設計</p>
-      <h2>事前インプット</h2>
-      <p class="muted">参加企業に事前依頼</p>
-      <ul class="list">
-        <li>困りごと（3つ）</li>
-        <li>現在取得しているデータ</li>
-        <li>見たいが見れていない指標</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== 14 セクション区切り：ファシリテーション ===== -->
-  <section class="slide slide-section">
-    <span class="section-num">Part 03</span>
-    <h2>ファシリテーション ＆ 専門家</h2>
-    <p>運営方針と乾氏の役割</p>
-  </section>
-
-
-  <!-- ===== 16 専門家の役割（乾氏） ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 03 &nbsp;/&nbsp; ファシリテーション ＆ 専門家</p>
-      <h2>専門家の役割（乾氏）</h2>
-      <ul class="list">
-        <li>課題整理のアドバイス</li>
-        <li>データ必要性の判断支援</li>
-        <li>現実的な取得方法の提示</li>
-        <li>成功事例の共有</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== 18 セクション区切り：価値・リスク ===== -->
-  <section class="slide slide-section">
-    <span class="section-num">Part 04</span>
-    <h2>提供価値 ＆ リスク対策</h2>
-  </section>
-
-  <!-- ===== 19 提供価値 ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 04 &nbsp;/&nbsp; 提供価値 ＆ リスク対策</p>
-      <h2>提供価値</h2>
-      <div class="cols-2">
-        <div>
-          <h3 class="accent" style="margin-bottom:.75rem;">参加企業</h3>
-          <ul class="list">
-            <li>DX初期の壁を突破</li>
-            <li>他社事例から学習</li>
-          </ul>
+        <div class="highlight-box">
+          <span class="box-title">現場の悩み</span>
+          <p>「同じデータを二重入力している」「集計に月10時間かかっている」等の具体例。</p>
         </div>
-        <div style="border-left: var(--border); padding-left: var(--sp-lg);">
-          <h3 class="accent" style="margin-bottom:.75rem;">コミュニティ</h3>
-          <ul class="list">
-            <li>継続参加の動機づくり</li>
-            <li>横のつながり強化</li>
-          </ul>
+        <div class="highlight-box">
+          <span class="box-title">利用環境</span>
+          <p>すでに導入検討しているツールがあるか（Power BI, Tableau, Looker Studio等）。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== 20 リスクと対策 ===== -->
+  <!-- ===== 07 今後の展開 ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 04 &nbsp;/&nbsp; 提供価値 ＆ リスク対策</p>
-      <h2>リスクと対策</h2>
-      <div class="cols-2">
-        <div>
-          <h3 class="muted" style="margin-bottom:.75rem;">リスク</h3>
-          <ul class="list">
-            <li>レベル差が大きい</li>
-            <li>発言しない企業が出る</li>
-            <li>具体化せず終わる</li>
-          </ul>
+      <h2>今後の展開</h2>
+      <div class="flow">
+        <div class="flow-step">
+          <h3>第1回</h3>
+          <p>事例共有＆<br>課題棚卸し<br><span class="accent bold">今回</span></p>
         </div>
-        <div style="border-left: var(--border); padding-left: var(--sp-lg);">
-          <h3 class="accent" style="margin-bottom:.75rem;">対策</h3>
-          <ul class="list">
-            <li>事前アンケートでレベル把握</li>
-            <li>チェックリスト活用</li>
-            <li>アウトプット必須化</li>
-          </ul>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <h3>第2回</h3>
+          <p>ステップアップ・<br>ワークショップ<br><span class="muted">実践型</span></p>
         </div>
       </div>
+      <p class="muted" style="margin-top: 1.5rem;">今回のワークショップで出た「可視化したいデータ」や「共通の課題」を元に、第2回では実践型の「ステップアップ・ワークショップ」へと繋げます。</p>
     </div>
   </section>
 
-  <!-- ===== 21 セクション区切り：準備・成果管理 ===== -->
-  <section class="slide slide-section">
-    <span class="section-num">Part 05</span>
-    <h2>事前準備 ＆ 成果管理</h2>
-  </section>
-
-  <!-- ===== 22 事前準備（運営タスク） ===== -->
+  <!-- ===== 08 運営体制 ===== -->
   <section class="slide slide-content">
     <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
     <div class="body">
-      <p class="section-label">Part 05 &nbsp;/&nbsp; 事前準備 ＆ 成果管理</p>
-      <h2>事前準備（運営タスク）</h2>
-      <ul class="list">
-        <li>事前アンケート実施</li>
-        <li>チェックリスト作成：<span class="accent bold">乾さん監修</span></li>
-        <li>ワークシート作成：<span class="accent bold">乾さん監修</span></li>
-        <li>事例資料準備:<span class="accent bold">対象企業</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== 26 成功指標（KPI） ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 05 &nbsp;/&nbsp; 事前準備 ＆ 成果管理</p>
-      <h2>成功指標（KPI）</h2>
-      <div class="cols-2">
-        <div class="card"><span class="tag">KPI 01</span><h3>満足度</h3></div>
-        <div class="card"><span class="tag">KPI 02</span><h3>課題明確化率</h3></div>
-        <div class="card"><span class="tag">KPI 03</span><h3>次回参加意向</h3></div>
-        <div class="card"><span class="tag">KPI 04</span><h3>具体アクション実行企業数</h3></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 27 運営体制 ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <p class="section-label">Part 05 &nbsp;/&nbsp; 事前準備 ＆ 成果管理</p>
       <h2>運営体制</h2>
-      <div class="cols-2">
+      <div class="cols-3">
         <div class="highlight-box">
           <span class="box-title">大倉</span>
-          <p>全体設計／ファシリ</p>
-        </div>
-        <div class="highlight-box">
-          <span class="box-title">乾さん</span>
-          <p>専門アドバイザー</p>
-        </div>
-        <div class="highlight-box">
-          <span class="box-title">谷内さん</span>
-          <p>運営準備補助</p>
+          <p>司会</p>
         </div>
         <div class="highlight-box">
           <span class="box-title">竹田さん</span>
-          <p>運営準備補助</p>
+          <p>準備補助</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 28 今後のロードマップ ===== -->
-  <section class="slide slide-content">
-    <img class="slide-logo" src="../../shared/logo/logo.png" alt="Logo">
-    <div class="body">
-      <h2>今後のロードマップ</h2>
-      <div class="flow">
-        <div class="flow-step">
-          <h3>Step1</h3>
-          <p>課題整理<br><span class="accent bold">今回</span></p>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step">
-          <h3>Step2</h3>
-          <p>データ取得・整備</p>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step">
-          <h3>Step3</h3>
-          <p>BIツール実装</p>
-        </div>
-        <div class="flow-arrow">→</div>
-        <div class="flow-step">
-          <h3>Step4</h3>
-          <p>各社経営活用</p>
+        <div class="highlight-box">
+          <span class="box-title">谷内さん</span>
+          <p>準備補助</p>
         </div>
       </div>
     </div>
@@ -384,7 +209,7 @@
 
 <!-- ── ナビUI ── -->
 <div class="slide-ui">
-  <div class="slide-counter">01 / 30</div>
+  <div class="slide-counter">01 / 08</div>
   <div class="slide-nav">
     <button id="btn-prev">← Prev</button>
     <button id="btn-next">Next →</button>
